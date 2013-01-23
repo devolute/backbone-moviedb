@@ -1,0 +1,16 @@
+<td><%= title %></td>
+<td><%= description %></td>
+<td><%= category %></td>
+<td><%= average_rating %></td>
+
+<% if(Moviedb.data.user.isLoggedIn()) {%>
+  <td class="my-rating"></td>
+
+
+<td>
+  <a class="btn btn-mini btn-primary edit" href="#/<%= id %>/edit">Edit</a>
+</td>
+<td>
+  <a href="#/<%= id %>/destroy" class="btn btn-mini btn-danger destroy">Destroy</a>
+</td>
+<% } %>

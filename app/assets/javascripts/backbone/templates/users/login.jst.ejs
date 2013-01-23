@@ -1,0 +1,30 @@
+<div class="modal">
+
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">×</button>
+    <h1>Login</h1>
+  </div>
+
+  <div class="modal-body">
+    <div class="errors">
+      <%= errors %>
+    </div>
+    <form id="login">
+      <div class="field">
+        <label for="title"> Email:</label>
+        <input type="text" name="email" id="email" value="<%= email %>" >
+      </div>
+
+      <div class="field">
+        <label for="description"> Password:</label>
+        <input type="password" name="password" id="password" value="<%= password %>" >
+      </div>
+
+      <div class="actions">
+        <input class="btn" type="submit" value="Login" />
+      </div>
+
+    </form>
+  </div>
+
+</div>

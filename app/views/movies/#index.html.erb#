@@ -1,0 +1,8 @@
+<div id="movies"></div>
+<script type="text/javascript">
+  $(function() {
+    // Moviedb is the app name
+    window.router = new Moviedb.Routers.MoviesRouter({movies: <%= @movies.to_json.html_safe -%>});
+    Backbone.history.start();
+  });
+</script> 

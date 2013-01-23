@@ -1,0 +1,13 @@
+<div id="movies"></div>
+<script type="text/javascript">
+  $(function() {
+    // Moviedb is the app name
+    <% if current_user %>
+
+      window.router = new Moviedb.Routers.MoviesRouter({movies: <%= @movies.to_json.html_safe %>, user: <%= current_user.to_json.html_safe %>});
+    <% else %>
+      window.router = new Moviedb.Routers.MoviesRouter({movies: <%= @movies.to_json.html_safe %>});
+    <% end %>
+    Backbone.history.start();
+  });
+</script>
