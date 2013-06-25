@@ -24,7 +24,7 @@ gem 'jquery-rails'
 gem 'rails-backbone'
 
 gem 'devise'
-gem 'acts_as_rateable', :git => "git@github.com:devolute/acts_as_rateable.git"
+gem 'acts_as_rateable', github: "devolute/acts_as_rateable"
 
 gem 'sass-twitter-bootstrap-rails', '~> 1.0'
 
